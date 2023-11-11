@@ -1,3 +1,5 @@
+
+
 public class Toy {
     private int id;
     private String title;
@@ -25,6 +27,7 @@ public class Toy {
     public void decreaseQty() {
         this.qty -= 1;
     }
+ 
 
     public int getId() {
         return id;
@@ -41,4 +44,22 @@ public class Toy {
     public int getChance() {
         return chance;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setQty(int qty) {
+        this.qty = qty;
+    }
+
+    @Override
+    public String toString() {
+        return "Toy [title=" + title + ", qty=" + qty + "]";
+    }
+    
 }
